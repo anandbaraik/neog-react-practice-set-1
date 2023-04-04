@@ -5,6 +5,7 @@ import { DisplayImage } from "./Questions/DisplayImage";
 import Stationary from "./Questions/Stationary";
 import ProductsCard from "./Questions/ProductsCard";
 import ProductsCardFiltered from "./Questions/ProductsCardFiltered";
+import StudentDetails from "./Questions/StudentDetails";
 
 export default function App() {
   //Q1
@@ -28,7 +29,7 @@ export default function App() {
   const imageLink = "https://cdn.pixabay.com/photo/2023/03/18/10/43/plum-blossoms-7860381_1280.jpg";
   const caption = "Spring Flowers";
 
-  //Q5
+  //Q5 & Q6
   const products = [
     { name: 'Perk', quantity: 10, sales: 7 },
     { name: 'Pepsi', quantity: 10, sales: 20 },
@@ -36,6 +37,15 @@ export default function App() {
     { name: 'Maggi', quantity: 41, sales: 22 },
     { name: '5Star', quantity: 7, sales: 9 },
   ]
+  //Q7
+  const student = {
+    name: "John Doe",
+    subjects: [
+      { subject: "English", score: 90 },
+      { subject: "Maths", score: 80 },
+      { subject: "Computers", score: 70 },
+    ]
+  }
   return (
     <div className="App">
       <h1>ReactJS Practice Question Set 1</h1>
@@ -57,7 +67,8 @@ export default function App() {
       {/* <ProductsCard
         products={products}
       /> */}
-      <ProductsCardFiltered products={products}/>
+      {/* <ProductsCardFiltered products={products}/> */}
+      <StudentDetails student={student}/>
     </div>
   );
 }
