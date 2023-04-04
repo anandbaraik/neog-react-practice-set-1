@@ -4,6 +4,7 @@ import { CustomButton } from "./Questions/CustomButton";
 import { DisplayImage } from "./Questions/DisplayImage";
 import Stationary from "./Questions/Stationary";
 import ProductsCard from "./Questions/ProductsCard";
+import ProductsCardFiltered from "./Questions/ProductsCardFiltered";
 
 export default function App() {
   //Q1
@@ -56,6 +57,7 @@ export default function App() {
       {/* <ProductsCard
         products={products}
       /> */}
+      <ProductsCardFiltered products={products}/>
     </div>
   );
 }
