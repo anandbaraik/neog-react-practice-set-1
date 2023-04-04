@@ -6,6 +6,7 @@ import Stationary from "./Questions/Stationary";
 import ProductsCard from "./Questions/ProductsCard";
 import ProductsCardFiltered from "./Questions/ProductsCardFiltered";
 import StudentDetails from "./Questions/StudentDetails";
+import EmployeeDetails from "./Questions/EmployeeDetails";
 
 export default function App() {
   //Q1
@@ -68,7 +69,8 @@ export default function App() {
         products={products}
       /> */}
       {/* <ProductsCardFiltered products={products}/> */}
-      <StudentDetails student={student}/>
+      {/* <StudentDetails student={student}/> */}
+      <EmployeeDetails/>
     </div>
   );
 }
