@@ -4,6 +4,11 @@ import Cartoons from './Cartoons'
 import CartoonWithEvenMagnitude from './CartoonWithEvenMagnitude'
 import CartoonWithIntelligence from './CartoonWithIntelligence'
 import VegatableList from './VegatableList'
+import FlowerPrice from './FlowerPrice'
+import FlowersGreaterThan2000 from './FlowersGreaterThan2000'
+import Donations from './Donations'
+import TotalCars from './TotalCars'
+import Certification from './Certification'
 
 const SetThree = () => {
   return (
@@ -17,7 +22,12 @@ const SetThree = () => {
         {/* <Cartoons/> */}
         {/* <CartoonWithEvenMagnitude/> */}
         {/* <CartoonWithIntelligence/> */}
-        <VegatableList/>
+        {/* <VegatableList/> */}
+        {/* <FlowerPrice/> */}
+        {/* <FlowersGreaterThan2000/> */}
+        {/* <Donations/> */}
+        {/* <TotalCars/> */}
+        <Certification/>
     </div>
   )
 }
