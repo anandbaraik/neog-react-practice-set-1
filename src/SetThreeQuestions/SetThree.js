@@ -3,6 +3,7 @@ import ImgCard from './ImgCard'
 import Cartoons from './Cartoons'
 import CartoonWithEvenMagnitude from './CartoonWithEvenMagnitude'
 import CartoonWithIntelligence from './CartoonWithIntelligence'
+import VegatableList from './VegatableList'
 
 const SetThree = () => {
   return (
@@ -15,7 +16,8 @@ const SetThree = () => {
             /> */}
         {/* <Cartoons/> */}
         {/* <CartoonWithEvenMagnitude/> */}
-        <CartoonWithIntelligence/>
+        {/* <CartoonWithIntelligence/> */}
+        <VegatableList/>
     </div>
   )
 }
