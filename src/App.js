@@ -1,3 +1,4 @@
+import { SetFour } from "./SetFourQuestions/SetFour";
 import SetOne from "./SetOneQuestions/SetOne";
 import SetThree from "./SetThreeQuestions/SetThree";
 import SetTwo from "./SetTwoQuestions/SetTwo";
@@ -8,7 +9,8 @@ export default function App() {
     <div className="App">
       {/* <SetOne/> */}
       {/* <SetTwo/> */}
-      <SetThree/>
+      {/* <SetThree/>1 */}
+      <SetFour/>
     </div>
   );
 }
