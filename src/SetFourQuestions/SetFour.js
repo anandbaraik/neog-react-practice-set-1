@@ -1,6 +1,7 @@
 import React from 'react'
 import TabComponent from './TabComponent'
 import Vegitables from './Vegitables'
+import Game from './Game';
 
 export const SetFour = () => {
   const itemList = [
@@ -13,7 +14,8 @@ export const SetFour = () => {
     <div>
         <h1>ReactJS Practice Question Set 4</h1>
         {/* <TabComponent/> */}
-        <Vegitables itemList={itemList}/>
+        {/* <Vegitables itemList={itemList}/> */}
+        <Game/>
     </div>
   )
 }
