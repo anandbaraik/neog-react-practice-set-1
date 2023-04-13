@@ -6,7 +6,7 @@ const Todo = ({todoItems}) => {
         const tasks = todos.filter(({id}) => id != taskId);
         setTodos(() => tasks);
     }
-    const markAsComplete = (taskId) => {
+    const toggleIsDone = (taskId) => {
         const tasks = todos.map(todo => {
                 if(todo.id == taskId) {
                     return {...todo, isDone: !todo.isDone};
@@ -16,7 +16,7 @@ const Todo = ({todoItems}) => {
         setTodos(tasks);
     }
     const getStyle = (isDone) => {
-        return isDone ? { textDecoration: "line-through" }
+        return isDone ? { textDecoration: "line-through", color: "red" }
         : null;
     }
   return (
@@ -24,7 +24,7 @@ const Todo = ({todoItems}) => {
         <h1>
             Todo List
         </h1>
-        <ol>
+        <ul>
             {
                 todos.map(({id, task, isDone}) => (
                     <li key={id}
@@ -42,13 +42,13 @@ const Todo = ({todoItems}) => {
                         </button>
                         {" "}
                         <button
-                            onClick={() => markAsComplete(id)}>
+                            onClick={() => toggleIsDone(id)}>
                             Is Done?
                         </button>
                     </li>
                 ))
             }
-        </ol>
+        </ul>
     </div>
   )
 }
