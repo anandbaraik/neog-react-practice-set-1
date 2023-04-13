@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Game = () => {
-  const [lives, setLives] = useState(3);
+  const [lives, setLives] = useState(10);
   const decreaseLive = () => {
     setLives(() => (lives == 0) ? 0 : lives -1);
   }
