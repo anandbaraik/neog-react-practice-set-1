@@ -6,7 +6,7 @@ const Users = () => {
         try {
             const result = await fakeFetch("https://example.com/api/users/status");
             if (result?.status === 404) throw new Error(result);
-            let {data:{users}, status} = result;
+            let {data:{users}} = result;
             if(users) setUserList(users);
         } catch (error) {
             console.error(`${error.status} : ${error.message}`);

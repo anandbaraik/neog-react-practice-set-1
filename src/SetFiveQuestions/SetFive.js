@@ -1,5 +1,6 @@
 import React from 'react'
 import Users from './Users'
+import { Products } from './Products'
 
 const SetFive = () => {
   return (
@@ -7,7 +8,8 @@ const SetFive = () => {
         <h1>
           ReactJS Practice Question Set 5
         </h1>
-        <Users/>
+        {/* <Users/> */}
+        <Products/>
     </div>
   )
 }
