@@ -1,6 +1,9 @@
 import React from 'react'
 import Users from './Users'
 import { Products } from './Products'
+import UsersFeed from './UsersFeed'
+import Chat from './Chat'
+import Comments from './Comments'
 
 const SetFive = () => {
   return (
@@ -9,7 +12,10 @@ const SetFive = () => {
           ReactJS Practice Question Set 5
         </h1>
         {/* <Users/> */}
-        <Products/>
+        {/* <Products/> */}
+        {/* <UsersFeed/> */}
+        {/* <Chat/> */}
+        <Comments/>
     </div>
   )
 }
