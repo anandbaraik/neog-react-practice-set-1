@@ -25,6 +25,8 @@ export default () => {
 
   const changeHandler = function (e) {
     const yearSelected = +e.target.value;
+    console.log(OGMovieList.current);
+    console.log(e.target.value);
     if (e.target.value === "All") {
       setMovieList(OGMovieList.current);
       return;

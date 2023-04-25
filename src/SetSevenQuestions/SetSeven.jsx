@@ -2,6 +2,7 @@ import React from 'react'
 import Weather from './Weather'
 import UserData from './UserData'
 import Movies from './Movies'
+import Users from './Users'
 
 const SetSeven = () => {
   return (
@@ -9,7 +10,8 @@ const SetSeven = () => {
         <h2>React Practice set 7</h2>
         {/* <Weather/> */}
         {/* <UserData/> */}
-        <Movies/>
+        {/* <Movies/> */}
+        <Users/>
     </div>
   )
 }
